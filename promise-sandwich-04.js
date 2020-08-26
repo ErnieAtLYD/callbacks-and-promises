@@ -25,7 +25,8 @@ function getSandwich() {
       if (ingredients) {
         console.log("Gonna make my sandwich!");
         // sandwich = makeSandwich(ingredients);
-        // By the way, this return on the next line is important. Remove it and sandwich passes undefined in the next chain.
+        // By the way, this return keyword below is important.
+        // Remove it and sandwich passes undefined in the next chain.
         return makeSandwich(ingredients);
       }
     })

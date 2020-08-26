@@ -32,3 +32,7 @@ function getSandwich() {
 }
 
 getSandwich();
+
+/**
+ * TASK: Wrap getIntegredients as a Promise object.
+ */

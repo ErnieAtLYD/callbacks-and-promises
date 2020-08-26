@@ -15,15 +15,17 @@ function makeSandwich(callback) {
     if (typeof callback === "function") {
       callback();
     }
+    // I could have also done this instead. Why?
+    // callback && callback();
   }, Math.random() * 1000);
 }
 
 function getSandwich() {
-  getIngredients(
+  getIngredients(() => {
     makeSandwich(() => {
       console.log(" 🍽  Sandwich complete!");
-    })
-  );
+    });
+  });
 }
 
 getSandwich();

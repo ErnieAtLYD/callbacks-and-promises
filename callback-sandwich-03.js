@@ -18,3 +18,18 @@ function getSandwich() {
 }
 
 getSandwich();
+
+/**
+ * Now pass a callback function to makeSandwich as well, so
+ * getSandwich looks like this:
+ * function getSandwich() {
+  getIngredients(() => {
+    makeSandwich(() => {
+      console.log(" 🍽  Sandwich complete!");
+    });
+  });
+}
+  Note though that any time we call callback() this time
+  we have to explicitly check if (typeof callback === "function")
+  first.
+ */

@@ -18,3 +18,11 @@ function getSandwich() {
 }
 
 getSandwich();
+
+/**
+ * Before JavaScript had promises are async/await, they
+ * used callbacks. Set it up so that in line 15, the
+ * makeSandwich function is passed as a callback function
+ * to getIngredients and change the getIngredients function
+ * to invoke the callback.
+ */
